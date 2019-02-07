@@ -1,10 +1,10 @@
 sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update
-sudo apt install -y vim
-sudo apt install -y git
-sudo apt install -y curl
-sudo apt-get install -y terminator
-sudo apt-get install -y zsh
+sudo apt install -y vim || exit 1;
+sudo apt install -y git || exit 1;
+sudo apt install -y curl || exit 1;
+sudo apt-get install -y terminator || exit 1;
+sudo apt-get install -y zsh || exit 1;
 cd
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -21,9 +21,9 @@ sudo apt-get install -y dconf-cli
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
 cd ~/.solarized
 ./install.sh
-echo "eval `dircolors ~/.dir_colors/dircolors`" >> ~/.zshrc
+echo "eval \`dircolors ~/.dir_colors/dircolors\`" >> ~/.zshrc
 echo "prompt_context() {
   if [[ \"$USER\" != \"$DEFAULT_USER\" || -n \"$SSH_CLIENT\" ]]; then
-    prompt_segment black default \"%(!.%{%F{yellow}%}.)$USER\"
+    prompt_segment black default \"%(!.%{%F{yellow}%}.)\"
   fi
 }" >> ~/.zshrc
