@@ -29,3 +29,5 @@ echo "prompt_context() {
     prompt_segment black default \"%(!.%{%F{yellow}%}.)\"
   fi
 }" >> ~/.zshrc
+echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc
+sed -i -e "s/plugins=(git)/plugins=(git kubectl)/g" ~/.zshrc
