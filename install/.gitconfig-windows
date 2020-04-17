@@ -13,8 +13,9 @@
     autocrlf = false
     excludesfile = ~/.gitignore
 
-[merge]
-    tool = meld
+## merge in windows
+[mergetool "meld"]
+	path = c:\\Program Files (x86)\\Meld\\Meld.exe
 
 [rerere]
     enabled = false

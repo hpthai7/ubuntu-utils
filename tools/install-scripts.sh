@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# All all scripts *.sh in the same directory to /user/bin directory 
+
 BIN="/usr/bin";
 for filename in $(pwd)/* # Using double quotes "" will return a sole complete string
 do

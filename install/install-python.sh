@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "What is the python version?"
 read version
 
