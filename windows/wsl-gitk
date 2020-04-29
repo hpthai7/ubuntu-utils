@@ -1,0 +1,6 @@
+#!/bin/bash
+# WSL 'gitk' wrapper, save as /usr/local/bin/git and chmod a+x
+
+/mnt/c/Program\ Files/Git/cmd/gitk.exe "$@"
+
+
