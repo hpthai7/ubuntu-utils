@@ -1,0 +1,4 @@
+Acquire::http::proxy "http://135.245.192.7:8000";
+Acquire::ftp::proxy "ftp://135.245.192.7:8000";
+Acquire::https::proxy "http://135.245.192.7:8000";
+
