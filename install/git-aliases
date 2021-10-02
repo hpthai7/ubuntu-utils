@@ -175,3 +175,10 @@ lazypush() { # input a message without quotes
     git push
 }
 alias glazypush='lazypush'
+
+clean_local_branches() {
+    git fetch --prune
+    git checkout master
+    git branch | grep -v "master" | xargs git branch -D
+}
+alias clean_branches='clean_local_branches'
