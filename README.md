@@ -10,6 +10,7 @@ Convenient script to install various tools in ubuntu/debian
 Shortcuts:
 
 ```bash
-./install/setup-shortcuts
+cd install
+./setup-shortcuts
 ```
 
