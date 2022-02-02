@@ -6,3 +6,10 @@ Convenient script to install various tools in ubuntu/debian
 - python
 - vscode
 - terminator + oh-my-zsh
+
+Shortcuts:
+
+```bash
+./install/setup-shortcuts
+```
+
