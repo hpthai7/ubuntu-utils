@@ -3,12 +3,24 @@
 # add config files
 cp gitconfig ~/.gitconfig;
 
+
+tee -a ~/.profile > /dev/null <<EOT
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
+fi
+EOT
+
+
 # add aliases
 cp git-aliases ~/.gitrc
 echo "source ~/.gitrc" >> ~/.bashrc
 echo "source ~/.gitrc" >> ~/.zshrc
 source ~/.bashrc
 source ~/.zshrc
+source ~/.profile
 
 # add k8s aliases
 cp k8s-aliases ~/.kuberc
@@ -16,4 +28,5 @@ echo "source ~/.kuberc" >> ~/.bashrc
 echo "source ~/.kuberc" >> ~/.zshrc
 source ~/.bashrc
 source ~/.zshrc
+source ~/.profile
 
