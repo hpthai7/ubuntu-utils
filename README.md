@@ -10,7 +10,8 @@ Convenient script to install various tools in ubuntu/debian
 Shortcuts:
 
 ```bash
-cd install
+git clone https://github.com/hpthai7/ubuntu-utils.git
+cd ubuntu-utils/install
 ./setup-shortcuts
 ```
 
