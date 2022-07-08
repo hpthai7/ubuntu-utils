@@ -13,5 +13,8 @@ Shortcuts:
 git clone https://github.com/hpthai7/ubuntu-utils.git
 cd ubuntu-utils/install
 ./setup-shortcuts
+source ~/.bashrc
+source ~/.zshrc
+
 ```
 
